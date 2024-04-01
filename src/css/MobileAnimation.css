@@ -1,0 +1,17 @@
+.arrow{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 85px;
+    bottom: -70px;
+    transform: translateX(0%);
+    animation: arrowBounce 1.5s ease-out infinite;
+  }
+  @keyframes arrowBounce{
+    0%{
+      top:100%;
+    }
+    100%{
+      top: 10%;
+    }
+  }
