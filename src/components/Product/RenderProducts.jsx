@@ -105,7 +105,7 @@ function RenderProducts() {
         <div className="flex pt-5 mb-5 md:mb-0 justify-center items-center m-auto">
           <Link
             className="bg-[#1A1F1F] font-['Poppins',sans-seriff] font-light rounded-md text-sm md:text-lg py-1 px-5 md:py-2 md:px-10 text-[#FFE4C4] hover:bg-slate-800 duration-100"
-            to="/Orcik-Elazig/siparis">
+            to="/Orcik-Website/siparis">
             Sipariş et
           </Link>
         </div>
