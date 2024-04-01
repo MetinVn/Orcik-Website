@@ -14,11 +14,11 @@ function App() {
     <Suspense fallback={<Fallback />}>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
-          <Route index path="/Orcik-Elazig/" Component={Home} />
-          <Route path="/Orcik-Elazig/biz-kimiz" Component={About} />
-          <Route path="/Orcik-Elazig/kargo" Component={Cargo} />
-          <Route path="/Orcik-Elazig/siparis" Component={Order} />
-          <Route path="/*" Component={NotFound} />
+          <Route exact index path="/Orcik-Website/" Component={Home} />
+          <Route exact path="/Orcik-Website/biz-kimiz" Component={About} />
+          <Route exact path="/Orcik-Website/kargo" Component={Cargo} />
+          <Route exact path="/Orcik-Website/siparis" Component={Order} />
+          <Route exact path="/*" Component={NotFound} />
         </Routes>
       </AnimatePresence>
     </Suspense>
