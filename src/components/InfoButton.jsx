@@ -37,7 +37,11 @@ const InfoButton = () => {
           </span>
           <span className="absolute text-sm top-0 right-1">
             <Suspense fallback={<div>X</div>}>
-              <Close fontSize="small" sx={{ color: "bisque" }} />
+              <Close
+                onClick={() => dispatch({ type: "infoClose" })}
+                fontSize="small"
+                sx={{ color: "bisque" }}
+              />
             </Suspense>
           </span>
           <span className="absolute left-0 top-6 right-0 w-full bg-[#FFE4C4] h-[1px] "></span>
