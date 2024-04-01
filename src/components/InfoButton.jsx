@@ -37,11 +37,7 @@ const InfoButton = () => {
           </span>
           <span className="absolute text-sm top-0 right-1">
             <Suspense fallback={<div>X</div>}>
-              <Close
-                fontSize="small"
-                sx={{ color: "bisque" }}
-                onClick={() => dispatch({ type: "infoClose" })}
-              />
+              <Close fontSize="small" sx={{ color: "bisque" }} />
             </Suspense>
           </span>
           <span className="absolute left-0 top-6 right-0 w-full bg-[#FFE4C4] h-[1px] "></span>
@@ -52,7 +48,6 @@ const InfoButton = () => {
                 <VerifiedUserRounded
                   fontSize="small"
                   sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
                 />
               </Suspense>
               Şikayet ve önerilerinizi doğrudan bize iletin
@@ -62,7 +57,6 @@ const InfoButton = () => {
                 <VerifiedUserRounded
                   fontSize="small"
                   sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
                 />
               </Suspense>
               7/24 müşteri hizmeti
@@ -72,7 +66,6 @@ const InfoButton = () => {
                 <VerifiedUserRounded
                   fontSize="small"
                   sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
                 />
               </Suspense>
               Türkiyenin her yerine karşı ödemeli kargo
@@ -82,7 +75,6 @@ const InfoButton = () => {
                 <VerifiedUserRounded
                   fontSize="small"
                   sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
                 />
               </Suspense>
               Ürünlerin hepsi 100% doğal olarak üretilmiştir
@@ -92,31 +84,19 @@ const InfoButton = () => {
             <p className="text-white text-center text-xs">İletişim bilgileri</p>
             <span className="flex flex-row mt-2 items-center text-[15px] text-white gap-1">
               <Suspense fallback={<div>X</div>}>
-                <WhatsApp
-                  fontSize="small"
-                  sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
-                />
+                <WhatsApp fontSize="small" sx={{ color: "bisque" }} />
               </Suspense>
               +90 538 014 04 09
             </span>
             <span className="flex flex-row items-center text-[15px] text-white gap-1">
               <Suspense fallback={<div>X</div>}>
-                <WhatsApp
-                  fontSize="small"
-                  sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
-                />
+                <WhatsApp fontSize="small" sx={{ color: "bisque" }} />
               </Suspense>
               +90 537 767 12 74
             </span>
             <span className="flex flex-row items-center text-[15px] text-white gap-1">
               <Suspense fallback={<div>X</div>}>
-                <Email
-                  fontSize="small"
-                  sx={{ color: "bisque" }}
-                  onClick={() => dispatch({ type: "infoClose" })}
-                />
+                <Email fontSize="small" sx={{ color: "bisque" }} />
               </Suspense>
               orcikelazig@gmail.com
             </span>
@@ -127,11 +107,7 @@ const InfoButton = () => {
           className="flex h-full items-center justify-center"
           onClick={() => dispatch({ type: "infoOpen" })}>
           <Suspense fallback={<div>X</div>}>
-            <InfoOutlined
-              fontSize="small"
-              sx={{ color: "bisque" }}
-              onClick={() => dispatch({ type: "infoClose" })}
-            />
+            <InfoOutlined fontSize="small" sx={{ color: "bisque" }} />
           </Suspense>
         </span>
       )}

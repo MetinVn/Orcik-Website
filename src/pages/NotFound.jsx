@@ -15,7 +15,7 @@ export function NotFound() {
           Aradığınız sayfa bulunamadı 404
         </h1>
         <a
-          href="/Orcik-Elazig"
+          href="/Orcik-Website"
           className="text-white border rounded-lg p-1 hover:bg-white hover:text-black duration-300">
           Geri dön
         </a>

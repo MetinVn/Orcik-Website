@@ -24,18 +24,18 @@ export function Header() {
         className="text-[#eaeaea] font-['Open Sans',sans-seriff] md:flex bg-black fixed top-0 w-full hidden flex-row justify-between py-3 px-10 z-10">
         <Link
           className="animate_header relative font-['Open_Sans'] italic lg:hover:text-blue-300 "
-          to="/Orcik-Elazig/">
+          to="/Orcik-Website/">
           Elazığ Orcik Ağası (Yöresel ürünler)
         </Link>
         <div className="mx-3 flex gap-5">
           <Link
             className="animate_header relative lg:hover:text-blue-300"
-            to="/Orcik-Elazig/biz-kimiz">
+            to="/Orcik-Website/biz-kimiz">
             Hakkımızda
           </Link>
           <Link
             className="animate_header relative lg:hover:text-blue-300"
-            to="/Orcik-Elazig/kargo">
+            to="/Orcik-Website/kargo">
             Kargo Takip
           </Link>
         </div>
@@ -52,10 +52,10 @@ export function Header() {
       </div>
       {reduce.animate ? (
         <div className="md:hidden burgerMenu text-[#e6ccb2] flex flex-col text-center justify-center gap-3">
-          <Link to="/Orcik-Elazig/">Elazığ Orcik Ağası</Link>
-          <Link to="/Orcik-Elazig/siparis">Sipariş</Link>
-          <Link to="/Orcik-Elazig/biz-kimiz">Hakkımızda</Link>
-          <Link to="/Orcik-Elazig/kargo">Kargo Takip</Link>
+          <Link to="/Orcik-Website/">Elazığ Orcik Ağası</Link>
+          <Link to="/Orcik-Website/siparis">Sipariş</Link>
+          <Link to="/Orcik-Website/biz-kimiz">Hakkımızda</Link>
+          <Link to="/Orcik-Website/kargo">Kargo Takip</Link>
         </div>
       ) : (
         <div className="md:hidden burgerMenu burgerMenu-close"></div>
