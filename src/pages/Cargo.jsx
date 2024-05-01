@@ -1,16 +1,11 @@
-import { useState, lazy, Suspense } from "react";
+import { useState } from "react";
 import transition from "../components/Transition";
 import Helmet from "../components/Helmet.jsx";
-import Fallback from "../components/Fallback.jsx";
 function Cargo() {
-  const Header = lazy(() => import("../components/Header/Header.jsx"));
   const [seek, setSeek] = useState(false);
   return (
     <>
       <Helmet metaTitle="Cargo - Elazig Orcik" />
-      <Suspense fallback={<Fallback />}>
-        <Header />
-      </Suspense>
       <div className="flex flex-col justify-center text-center px-1 sm:px-0 items-center min-h-screen bg-[#7f5539]">
         <p className="text-xl md:text-3xl text-[#FFE4C4]">
           {seek ? "Kargo bilgileriniz" : " Kargonuzu takip edin"}

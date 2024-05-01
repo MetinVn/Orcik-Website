@@ -1,10 +1,9 @@
 import Helmet from "../components/Helmet";
-import { useState, useRef, lazy, Suspense } from "react";
+import { useState, useRef, Suspense } from "react";
 import transition from "../components/Transition";
 import Fallback from "../components/Fallback";
 import video from "../videos/Orcik.mp4";
 export function About() {
-  const Header = lazy(() => import("../components/Header/Header.jsx"));
   const [sound, setSound] = useState(false);
   const [play, setPlay] = useState(true);
 
@@ -20,9 +19,6 @@ export function About() {
   return (
     <>
       <Helmet metaTitle="About - Elazig Orcik" />
-      <Suspense fallback={<Fallback />}>
-        <Header />
-      </Suspense>
       <div className="flex flex-col h-screen bg-[#9c6644] justify-center items-center">
         <div className="relative flex flex-col p-2 mt-10">
           <p className="text-white text-xs font-bold">

@@ -9,7 +9,6 @@ export function Order() {
   const Error = lazy(() => import("@mui/icons-material/Error"));
   const Check = lazy(() => import("@mui/icons-material/Check"));
   const Person = lazy(() => import("@mui/icons-material/Person"));
-  const Header = lazy(() => import("../components/Header/Header"));
 
   const form = useRef();
   const [initiate, setInitiate] = useState(false);
@@ -47,9 +46,6 @@ export function Order() {
   return (
     <>
       <Helmet metaTitle="Order - Elazig Orcik" />
-      <Suspense fallback={<p>Loading Header</p>}>
-        <Header />
-      </Suspense>
       <div className="min-h-screen flex px-5 sm:px-0 justify-center items-center bg-[#7f5539]">
         <div className="text-center">
           <p className="pb-5 text-[#FFE4C4] font-['Arial'] text-2xl">
